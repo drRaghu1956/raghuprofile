@@ -1,0 +1,64 @@
+body { margin: 0; display: flex; flex-direction: column; height: 100vh; }
+
+.image-gallery { display: flex; gap: 20px;  }
+
+.image-item { text-align: center;  }
+
+.section { flex-grow: 0; flex-shrink: 0; }
+
+.orange-border { background-color: orange; height: 20%; }
+
+
+.white-border { background-color: white; height: 20%; position: relative; display: flex;
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */         }
+            
+.green-border { background-color: green; height: 20%;         } 
+
+.black-bot { background-color: black; height: 15%; color: white; text-align: center;         }
+
+.black-top { background-color: black; hright: 20%; color:white;   position: relative; display: flex;
+            align-items: center; gap: 20px;  justify-content: center;     }
+
+/* Circle Container */
+.circle-container { position: relative; width: 120px; height: 120px; }
+        
+/* Blue Circumference */
+.circle { width: 100%; height: 100%; border: 2px solid blue; border-radius: 50%;         }
+
+/* Arms */
+.arm { position: absolute; width: 2px; /* Width of each arm */
+            height: 50%; /* Half the diameter of the circle */
+            background-color: black;
+            top: 0; /* Start from the top of the circle */
+            left: 50%; /* Center horizontally */
+            transform-origin: bottom center;   }
+
+.image-container {
+    width: 120px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    display: flex; /* Use Flexbox for alignment */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-end; /* Push items to the bottom */
+    border: 1px solid #ccc; /* Optional: for visual clarity */
+}
+
+.image-title {
+    margin: 0; /* Ensures no extra space */
+    padding: 0; /* Ensures no extra padding */
+    margin-top: 0px; /* Space between image and title */
+    text-align: center; /* Center text below the image */
+    max-width: 100%; /* Ensure title does not exceed full width */
+    overflow: hidden; /* Handle overflow if needed */
+}
+
+.img {
+    display: block; /* Removes bottom gap in images */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+}
+
+
+
+

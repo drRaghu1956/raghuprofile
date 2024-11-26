@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN NATIONAL FLAG</title>
+    <link rel="stylesheet" href="../cssfiles/my_flag.css">
+
+    
+</head>
+<body>
+    <div class="section black-top">
+    <div class="image-gallery">
+    
+    
+    
+    <div class="image-container">
+    <img src="../images/ME.jpg" height="100" width="100" alt="ME" />
+    <p class="image-title"> ME </p> ME </div>
+    
+    
+    <div class="image-container">
+    <img src="../images/dancekrishna.jpeg" height="100" width="100" alt="MyGod" />
+    <p class="image-title"> MY GOD </p> MY GOD </div>
+    
+    <div class="image-container">
+    <img src="../images/raghuguru.JPG" height="100" width="100" alt="MyMentor" />
+    <p class="image-title">My Mentor</p> MY Mentor </div>
+ 
+    <div class="image-container">
+    <img src="../images/AVS04.jpg" height="100" width="100" alt="MyDad" />
+    <p class="image-title">My DAD</p> </div>
+     
+    <div class="image-container">
+    <img src="../images/mywebguru.png" height="100" width="100" alt="Mywebguru" />
+    <p class="image-title">My WEB Guru</p> </div>
+    
+    <div class="image-container">
+    <img src="../images/raghu5thbook.png" height="100" width="100" alt="My5thbook" />
+    <p class="image-title">My Book</p> </div>
+ 
+    <div class="image-container">
+    <img src="../images/raghuatsastra.jpg" height="100" width="100" alt="atsastra" />
+    <p class="image-title">At University</p> </div>
+ 
+    <div class="image-container">
+    <img src="../images/raghufamily.jpeg" height="100" width="100" alt="family" />
+    <p class="image-title">My Family</p> </div>
+    
+    
+    </div>
+    </div>
+    <div class="section orange-border"></div>
+    <div class="section white-border">
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <div class="section green-border"></div>
+    <div class="section black-bot">
+    
+    <a href="https://maps.app.goo.gl/LT3h7akDRAEQMsUb8"><h2 style="color: yellow; text-align: center; font-size: 20px;">My Location : PGW APRT,CY-B-302, #66,Vanagaram Main Road,CHENNAI-600 058 TAMILNADU, INDIA </h2> </a> 
+    <h2 style="color: red; text-slign: center; font-size:20px;">Dr.S.Raghunathan@gmail.com</h2>
+    </div>
+
+    <script>
+        const container = document.querySelector('.circle-container');
+        const numArms = 24;
+
+        for (let i = 0; i < numArms; i++) {
+            const arm = document.createElement('div');
+            arm.classList.add('arm');
+            const angle = (360 / numArms) * i; // Calculate angle for each arm
+            arm.style.transform = `rotate(${angle}deg)`; // Rotate arm by calculated angle
+            container.appendChild(arm); // Append arm to container
+        }
+    </script>
+</body>
+</html>
